@@ -33,8 +33,8 @@
 
 1.  **リポジトリのクローン:**
     ```bash
-    git clone [https://github.com/あなたのユーザー名/あなたのリポジトリ名.git](https://github.com/あなたのユーザー名/あなたのリポジトリ名.git)
-    cd あなたのリポジトリ名
+    git clone [https://github.com/MuraseRyosuke/AIDogDiscordBot.git](https://github.com/MuraseRyosuke/AIDogDiscordBot.git)
+    cd AIDogDiscordBot
     ```
 
 2.  **Python環境の準備:**
@@ -99,7 +99,7 @@
         ```dotenv
         # 必須項目
         BOT_TOKEN="ここにあなたのDiscordボットトークンを貼り付け"
-        OLLAMA_MODEL_NAME="gemma-2-2b-jpn-it:q4_k_m" # ステップ3でOllamaに準備したモデル名 (例: "ai-inu-gemma-q4km")
+        OLLAMA_MODEL_NAME="gemma-2-2b-jpn-it:q4_K_M" # ステップ3でOllamaに準備したモデル名 (例: "ai-inu-gemma-q4km")
         OLLAMA_API_URL="http://localhost:11434/api/generate"
 
         # 任意項目 (設定しない場合はスクリプト内のデフォルト値が使用されます)
