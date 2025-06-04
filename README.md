@@ -64,9 +64,9 @@
     * [Ollama公式サイト](https://ollama.com/) からお使いのOSに合ったOllamaをダウンロードし、インストールします。
     * 使用するLLMモデル `Gemma-2-2b-jpn-it (Q4_K_M GGUF版)` をOllamaに準備します。
         * **方法A (Ollama Hubから直接pullする場合 - 推奨):**
-            Ollama Hubで `gemma-2-2b-jpn-it` を検索し、利用可能なタグから `q4_k_m` (または類似の量子化レベルを示すタグ) を見つけてpullします。
+            Ollama Hubで `gemma-2-2b-jpn-it` を検索し、利用可能なタグから `q4_K_M` (または類似の量子化レベルを示すタグ) を見つけてpullします。
             ```bash
-            ollama pull gemma-2-2b-jpn-it:q4_k_m
+            ollama pull schroneko/gemma-2-2b-jpn-it:q4_K_M
             ```
             *(注意: 上記のモデル名とタグはあくまで例です。Ollama Hubで実際に利用可能な正確な名前とタグを確認してください。コミュニティによって `ユーザー名/モデル名:タグ` の形式で提供されている場合もあります。)*
         * **方法B (GGUFファイルを手動でダウンロードしてOllamaにカスタムモデルとして登録する場合):**
@@ -99,7 +99,7 @@
         ```dotenv
         # 必須項目
         BOT_TOKEN="ここにあなたのDiscordボットトークンを貼り付け"
-        OLLAMA_MODEL_NAME="gemma-2-2b-jpn-it:q4_K_M" # ステップ3でOllamaに準備したモデル名 (例: "ai-inu-gemma-q4km")
+        OLLAMA_MODEL_NAME="schroneko/gemma-2-2b-jpn-it:q4_K_M" # ステップ3でOllamaに準備したモデル名 (例: "ai-inu-gemma-q4km")
         OLLAMA_API_URL="http://localhost:11434/api/generate"
 
         # 任意項目 (設定しない場合はスクリプト内のデフォルト値が使用されます)
