@@ -2,8 +2,7 @@
 
 「AI犬」は、ローカル環境で動作する大規模言語モデル (LLM) を活用した、個性豊かな犬型AIチャットボットです。Ollamaを通じて Gemma-2-2b-jpn-it (Q4_K_M量子化版) を使用し、Discordサーバーやダイレクトメッセージでユーザーとの対話を実現します。
 
-!http://googleusercontent.com/image_generation_content/2
-*(この画像は一例です。実際のボットのプロフィール画像に置き換えるか、この行を削除してください。)*
+![Image](https://github.com/user-attachments/assets/1d399488-3c07-4460-b7a0-49b74ae4f6ba)
 
 ## 🌟 特徴
 
