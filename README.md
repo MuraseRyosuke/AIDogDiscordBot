@@ -9,8 +9,7 @@
 
 単なるチャット機能だけでなく、個別の会話履歴管理、豊富なコマンド、柔軟な設定機能などを備えた、実践的なボット開発のテンプレートとしても利用できます。
 
-![AI犬 動作デモ](https://i.imgur.com/your-demo-image.gif)
-*(ここにボットの動作デモのスクリーンショットやGIFを配置することをおすすめします)*
+![Image](https://github.com/user-attachments/assets/6b515254-db40-4250-932d-096bb52bebb2)
 
 ## 主な機能
 
@@ -39,8 +38,8 @@
 
 1.  **リポジトリをクローン**
     ```bash
-    git clone [https://github.com/あなたのユーザー名/ai-dog-bot.git](https://github.com/あなたのユーザー名/ai-dog-bot.git)
-    cd ai-dog-bot
+    git clone [https://github.com/MuraseRyosuke/AIDogDiscordBot.git](https://github.com/MuraseRyosuke/AIDogDiscordBot.git)
+    cd AIDogDiscordBot
     ```
 
 2.  **Ollamaのセットアップ**
@@ -112,3 +111,21 @@
 | `reloadcfg` | (管理者のみ) `.env`ファイルの設定を再読み込みします。 |
 
 ## プロジェクト構造
+
+ai-dog-bot/
+├── cogs/                 # コマンドを機能ごとにまとめたフォルダ (Cog)
+│   ├── admin.py          # 管理者用コマンド
+│   ├── fun.py            # 天気や画像送信などのコマンド
+│   └── general.py        # help, statsなどの一般コマンド
+├── utils/                # 補助的な機能モジュール
+│   ├── bot_utils.py      # レート制限や統計管理
+│   └── conversation_manager.py # 会話履歴管理(SQLite)
+├── bot_main.py           # ボットのメインプログラム
+├── config.py             # 設定の読み込みと管理
+├── .env.example          # 設定ファイルの見本
+├── requirements.txt      # 必要なPythonライブラリ一覧
+└── README.md             # このファイル
+
+## ライセンス
+
+このプロジェクトは [MITライセンス](https://opensource.org/licenses/MIT) の下で公開されています。
