@@ -1,0 +1,90 @@
+# Python .gitignore
+
+# -----------------------------------------------------------------------------
+# コメント: このファイルは、Gitリポジトリに含めたくないファイルやフォルダを指定します。
+# -----------------------------------------------------------------------------
+
+
+# --- Pythonキャッシュ・コンパイル済みファイル ---
+# Pythonが自動生成するキャッシュファイル
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# --- 仮想環境 ---
+# venv, env, .venv などの一般的な仮想環境フォルダ
+venv/
+env/
+.venv/
+ENV/
+
+
+# --- 設定ファイル (機密情報) ---
+# .env や .env.local など、全ての.envファイルを無視する
+# ただし、テンプレートである .env.example は無視しない (「!」で否定)
+*.env
+.env.*
+!/.env.example
+
+
+# --- データベースファイル ---
+# 実行中に生成されるSQLiteデータベースファイル
+# (会話履歴などの実行時データはリポジトリに含めない)
+*.db
+*.sqlite
+*.sqlite3
+# このプロジェクト専用のDBファイル
+ai_dog_conversation_history.sqlite3
+
+
+# --- ログファイル ---
+# 実行ログ
+*.log
+logs/
+*.log.*
+
+
+# --- エディタ・IDE設定ファイル ---
+# Visual Studio Code, JetBrains IDEs (PyCharm)など
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+
+# --- テスト関連ファイル ---
+# pytestやcoverage.pyが生成するキャッシュやレポート
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+
+
+# --- パッケージング・ビルド成果物 ---
+# setuptoolsなどでパッケージを作成した際に生成されるフォルダ
+build/
+dist/
+*.egg-info/
+*.egg
+
+
+# --- OS固有のファイル ---
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+
+# --- 型チェックツール ---
+# mypyのキャッシュ
+.mypy_cache/
+
+
+# --- Jupyter Notebook ---
+# チェックポイントファイル
+.ipynb_checkpoints
