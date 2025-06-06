@@ -1,6 +1,7 @@
 import nextcord
 from nextcord.ext import commands
 import io
+import aiohttp # エラーハンドリング用にインポート
 from pathlib import Path
 from datetime import datetime
 from typing import Optional
@@ -23,9 +24,12 @@ class FunCog(commands.Cog, name="お楽しみコマンド"):
             await ctx.send(f"どこのお天気が知りたいワン？ `{self.bot.config.command_prefix}weather 都市名` で教えて！"); return
 
         # --- ★★★ ここが修正点です ★★★ ---
-        # URLはベース部分のみを記述
+        # NG例: f-stringで直接URLを組み立てると日本語がエンコードされずエラーになる
+        # url_bad = f"http://api.openweathermap.org/data/2.5/weather?q={target_city}&..."
+
+        # OK例: ベースURLとパラメータを分離する
+        # これにより、aiohttpが日本語を正しくエンコードしてくれます。
         url = "http://api.openweathermap.org/data/2.5/weather"
-        # 都市名やAPIキーなどのパラメータは、安全な辞書形式で渡す
         params = {
             'q': target_city,
             'appid': self.bot.config.openweathermap_api_key,
@@ -49,16 +53,8 @@ class FunCog(commands.Cog, name="お楽しみコマンド"):
             humidity = data["main"]["humidity"]
             wind = data["wind"]["speed"]
             
-            weather_text_for_llm = (f"今日の{city_name}の天気は「{desc}」、気温{temp}°C（最高{t_max}°C、最低{t_min}°C）、湿度は{humidity}%、風速{wind}mです。"
-                                    f"この天気について、AI犬として何か一言コメントしてください。例えば「お散歩に最高だワン！」とか「今日は傘がいるかも？」のように、天気に合わせた楽しくて役立つ短いコメントをお願いします。")
-            
-            # ask_ai_inuはbotインスタンスに紐づいていないので、直接は呼べません。
-            # bot_main.pyで定義したヘルパー関数を呼び出すように修正が必要です。
-            # ただし、現在の構造では直接呼べないので、一時的にコメント生成をスキップします。
-            # (もし ask_ai_inu を使いたい場合は、bot_main.pyからこの関数に bot インスタンスを渡す必要があります)
-            # weather_comment, success, _ = await self.bot.ask_ai_inu(weather_text_for_llm, ctx.author.id)
-            weather_comment = "お出かけの参考にしてほしいワン！🐾" # 一時的なコメント
-            success = True
+            # 天気情報取得後のLLMへのコメント要求は、現在の構造では複雑になるため固定メッセージにしています
+            weather_comment = "お出かけの参考にしてほしいワン！🐾"
 
             embed = nextcord.Embed(title=f"🐕 {city_name}のお天気情報だワン！", color=0x7289da, timestamp=datetime.now())
             embed.add_field(name="天気", value=desc.capitalize(), inline=True)
@@ -66,8 +62,7 @@ class FunCog(commands.Cog, name="お楽しみコマンド"):
             embed.add_field(name="最高/最低", value=f"{t_max:.1f}°C / {t_min:.1f}°C", inline=True)
             embed.add_field(name="湿度", value=f"{humidity}%", inline=True)
             embed.add_field(name="風速", value=f"{wind:.1f} m/s", inline=True)
-            if success and weather_comment:
-                embed.add_field(name="AI犬からの一言", value=weather_comment, inline=False)
+            embed.add_field(name="AI犬からの一言", value=weather_comment, inline=False)
             
             icon_id = data["weather"][0]["icon"]
             embed.set_thumbnail(url=f"http://openweathermap.org/img/wn/{icon_id}@2x.png")
@@ -79,7 +74,7 @@ class FunCog(commands.Cog, name="お楽しみコマンド"):
             if e.status == 401:
                 await processing_msg.edit(content="お天気情報の取得に失敗… APIキーが無効みたいだワン。")
             elif e.status == 404:
-                await processing_msg.edit(content=f"`{target_city}`が見つからなかったワン… 都市名を確認してみてね。")
+                await processing_msg.edit(content=f"`{target_city}`が見つからなかったワン… ローマ字で試してみてね。")
             else:
                 await processing_msg.edit(content="お天気情報の取得中にエラーが発生しちゃった…")
         except Exception as e:
