@@ -10,12 +10,10 @@ from urllib.parse import urljoin
 from datetime import datetime
 from typing import Optional, Tuple
 
-# --- 設定とユーティリティのインポート ---
 from config import BotConfig, load_and_validate_config
 from utils.conversation_manager import ConversationManager
 from utils.bot_utils import RateLimiter, BotStats
 
-# --- ログ設定 ---
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -26,13 +24,11 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# --- ボットの初期化 ---
 config = load_and_validate_config()
 intents = nextcord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix=config.command_prefix, intents=intents, help_command=None)
 
-# --- ボットインスタンスにカスタム属性を追加 ---
 bot.config = config
 bot.conversation_manager = ConversationManager(config.max_conversation_history, db_path=config.conversation_db_path)
 bot.rate_limiter = RateLimiter(config.rate_limit_per_user, config.rate_limit_window)
@@ -40,7 +36,6 @@ bot.stats = BotStats()
 bot.http_session: Optional[aiohttp.ClientSession] = None
 bot.ollama_status = "初期化中..."
 
-# --- ★★★ 完全なペルソナプロンプト ★★★ ---
 bot.persona_prompt_template = """
 あなたは「AI犬」です。以下のキャラクター設定と指示に従って、ご主人様であるユーザーへの最高の応答を生成してください。
 
@@ -88,22 +83,17 @@ AI犬として、上記全てを踏まえた上で、最高の応答をしてく
 応答:
 """
 
-# --- ステータス変更用のヘルパー関数 ---
 async def set_idle_status():
-    """ボットのステータスをアイドル状態（モデル名表示）に設定する"""
     model_name = bot.config.ollama_model_name
     activity = nextcord.Game(name=model_name)
     await bot.change_presence(status=nextcord.Status.online, activity=activity)
     logger.info(f"ステータスをアイドルに変更: {model_name}")
 
 async def set_busy_status():
-    """ボットのステータスをビジー状態（思考中）に設定する"""
     activity = nextcord.Game(name="思考中... 🧠")
     await bot.change_presence(status=nextcord.Status.online, activity=activity)
     logger.info("ステータスをビジーに変更")
 
-
-# --- メインのヘルパー関数 ---
 async def ask_ai_inu(question: str, user_id: int) -> Tuple[str, bool, float]:
     start_time = time.time()
     context = bot.conversation_manager.get_context(user_id)
@@ -132,7 +122,6 @@ def sanitize_input(text: str) -> str:
     for pattern, replacement in replacements.items(): text = text.replace(pattern, replacement)
     return text.strip()
 
-# --- イベントハンドラ ---
 @bot.event
 async def on_ready():
     bot.http_session = aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=bot.config.request_timeout))
@@ -149,18 +138,14 @@ async def on_ready():
 
 @bot.event
 async def on_message(message: nextcord.Message):
-    if message.author.bot or message.author == bot.user:
-        return
-
-    # 先にコマンドを処理しようと試みる
+    if message.author.bot or message.author == bot.user: return
     await bot.process_commands(message)
+    if message.content.startswith(bot.config.command_prefix): return
 
-    # メッセージがコマンドとして処理されなかった場合、会話処理を検討
-    if not message.content.startswith(bot.config.command_prefix) and (bot.user.mentioned_in(message) or isinstance(message.channel, nextcord.DMChannel)):
+    if bot.user.mentioned_in(message) or isinstance(message.channel, nextcord.DMChannel):
         is_limited, wait_time = bot.rate_limiter.is_rate_limited(message.author.id)
         if is_limited:
-            await message.channel.send(f"{message.author.mention} ちょっとお話疲れちゃった… {wait_time}秒待ってね！")
-            return
+            await message.channel.send(f"{message.author.mention} ちょっとお話疲れちゃった… {wait_time}秒待ってね！"); return
         
         raw_question = message.content
         if not isinstance(message.channel, nextcord.DMChannel):
@@ -169,24 +154,18 @@ async def on_message(message: nextcord.Message):
         question = raw_question.strip()
 
         if not question and not message.attachments:
-            if bot.user.mentioned_in(message):
-                await message.channel.send(f"{message.author.mention} わん！AI犬にご用かな？")
+            if bot.user.mentioned_in(message): await message.channel.send(f"{message.author.mention} わん！AI犬にご用かな？")
             return
 
         try:
             await set_busy_status()
-            sanitized_question = sanitize_input(question) # 添付ファイル対応はここに追記可能
+            sanitized_question = sanitize_input(question)
             async with message.channel.typing():
                 logger.info(f"質問受付 - User: {message.author.name}, Q: {sanitized_question[:50]}")
                 reply_text, success, response_time = await ask_ai_inu(sanitized_question, message.author.id)
-                
                 bot.stats.record_request(success, response_time)
-                if success:
-                    bot.conversation_manager.add_message(message.author.id, sanitized_question, reply_text)
-                
-                if len(reply_text) > bot.config.max_response_length:
-                    reply_text = reply_text[:bot.config.max_response_length] + "…（省略）"
-                
+                if success: bot.conversation_manager.add_message(message.author.id, sanitized_question, reply_text)
+                if len(reply_text) > bot.config.max_response_length: reply_text = reply_text[:bot.config.max_response_length] + "…（省略）"
                 user_mention = f"{message.author.mention} " if not isinstance(message.channel, nextcord.DMChannel) else ""
                 await message.channel.send(f"{user_mention}{reply_text}")
                 logger.info(f"応答完了 - Time: {response_time:.2f}s, Success: {success}")
@@ -195,20 +174,16 @@ async def on_message(message: nextcord.Message):
 
 @bot.event
 async def on_command_error(ctx: commands.Context, error: commands.CommandError):
-    if isinstance(error, commands.CommandNotFound):
-        pass # 不明なコマンドは無視し、on_messageでの会話処理に任せる
-    elif isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send(f"わん！「`{ctx.command.name}`」コマンドに必要なものが足りないみたい！ `{bot.config.command_prefix}help {ctx.command.name}` で使い方を確認してね！")
-    elif isinstance(error, (commands.NotOwner, commands.CheckFailure)):
-        await ctx.send("くぅーん...そのコマンドは特別なご主人様しか使えないんだワン...ごめんね！🐾")
+    if isinstance(error, commands.CommandNotFound): pass
+    elif isinstance(error, commands.MissingRequiredArgument): await ctx.send(f"わん！「`{ctx.command.name}`」に必要なものが足りないみたい！")
+    elif isinstance(error, (commands.NotOwner, commands.CheckFailure)): await ctx.send("くぅーん...そのコマンドは特別なご主人様しか使えないんだワン...🐾")
     elif isinstance(error, commands.CommandInvokeError):
         logger.error(f"コマンド「{ctx.command.qualified_name}」実行中エラー: {error.original}", exc_info=True)
-        await ctx.send(f"わわっ！「`{ctx.command.qualified_name}`」実行中に問題発生！もう一度試してみてね。")
+        await ctx.send(f"わわっ！「`{ctx.command.qualified_name}`」実行中に問題発生！")
     else:
-        logger.error(f"未処理コマンドエラー: {error} (コマンド: {ctx.command.qualified_name if ctx.command else '不明'}, タイプ: {type(error)})", exc_info=True)
-        await ctx.send("うーん、コマンドでよく分からないエラーが起きちゃったワン...ごめんなさい！")
+        logger.error(f"未処理コマンドエラー: {error}", exc_info=True)
+        await ctx.send("うーん、コマンドでよく分からないエラーが…")
 
-# --- 定期実行タスク ---
 @tasks.loop(minutes=2)
 async def check_ollama_status_task():
     if not bot.http_session: return
@@ -219,7 +194,6 @@ async def check_ollama_status_task():
     except (aiohttp.ClientError, asyncio.TimeoutError):
         bot.ollama_status = "オフライン"
 
-# --- Cogの読み込み処理 (メインスクリプトの最後の方で実行) ---
 logger.info("--- Cogの読み込みを開始します... ---")
 for filename in os.listdir('./cogs'):
     if filename.endswith('.py') and not filename.startswith('__'):
@@ -230,7 +204,6 @@ for filename in os.listdir('./cogs'):
         except Exception as e:
             logger.error(f"FAILED: Cog '{extension}' の読み込みに失敗しました。", exc_info=e)
 
-# --- メイン実行 ---
 if __name__ == '__main__':
     try:
         logger.info("AI犬ボットを起動準備中だワン...")

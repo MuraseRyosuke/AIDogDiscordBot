@@ -1,0 +1,409 @@
+2025-06-13 00:16:50,644 - nextcord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-06-13 00:16:50,663 - utils.conversation_manager - INFO - SQLite DB 'ai_dog_conversation_history.sqlite3' 準備完了だワン。
+2025-06-13 00:16:50,666 - __main__ - INFO - --- Cogの読み込みを開始します... ---
+2025-06-13 00:16:50,683 - __main__ - INFO - SUCCESS: Cog 'cogs.admin' の読み込みに成功しました。
+2025-06-13 00:16:50,702 - __main__ - INFO - SUCCESS: Cog 'cogs.fun' の読み込みに成功しました。
+2025-06-13 00:16:50,718 - __main__ - INFO - SUCCESS: Cog 'cogs.general' の読み込みに成功しました。
+2025-06-13 00:16:50,736 - __main__ - INFO - SUCCESS: Cog 'cogs.gourmet' の読み込みに成功しました。
+2025-06-13 00:16:50,862 - __main__ - INFO - SUCCESS: Cog 'cogs.ndl' の読み込みに成功しました。
+2025-06-13 00:16:50,863 - __main__ - INFO - AI犬ボットを起動準備中だワン...
+2025-06-13 00:16:50,865 - nextcord.client - INFO - logging in using static token
+2025-06-13 00:16:50,909 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-13 00:16:51,922 - nextcord.gateway - INFO - Shard ID None has sent the IDENTIFY payload.
+2025-06-13 00:16:52,202 - nextcord.gateway - INFO - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-c-s0q4",{"micros":64950,"calls":["id_created",{"micros":429,"calls":[]},"session_lookup_time",{"micros":2038,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":61924,"calls":["start_session",{"micros":49675,"calls":["discord-api-rpc-8865d5cbd-49n9w",{"micros":40073,"calls":["get_user",{"micros":6964},"get_guilds",{"micros":5141},"send_scheduled_deletion_message",{"micros":15},"guild_join_requests",{"micros":2},"authorized_ip_coro",{"micros":14},"pending_payments",{"micros":1361},"apex_user_experiments",{"micros":5},"user_activities",{"micros":3},"played_application_ids",{"micros":2}]}]},"starting_guild_connect",{"micros":25,"calls":[]},"presence_started",{"micros":406,"calls":[]},"guilds_started",{"micros":58,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":11739,"calls":[]},"connect_finished",{"micros":11743,"calls":[]},"build_ready",{"micros":14,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 62643b8a0c975270bac4c01779ccaccd). Resume URL specified as wss://gateway-us-east1-c.discord.gg
+2025-06-13 00:16:54,251 - __main__ - INFO - ステータスをアイドルに変更: hf.co/mmnga/sarashina2.2-3b-instruct-v0.1-gguf:latest
+2025-06-13 00:16:54,253 - __main__ - INFO - AI犬「AI犬」(モデル: hf.co/mmnga/sarashina2.2-3b-instruct-v0.1-gguf:latest) が起動したワン！
+2025-06-13 00:21:50,927 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-13 00:31:50,937 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-13 01:32:21,399 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-13 01:32:21,767 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-13 01:32:21,971 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-lxdv",{"micros":1446,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":405,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":20}]}].
+2025-06-13 02:10:00,917 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-13 02:10:00,919 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-13 02:10:01,851 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-13 02:10:02,050 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-lk0b",{"micros":1011,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":649,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-13 02:11:51,080 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-13 02:37:19,418 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-13 02:37:20,018 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-13 02:37:20,226 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-tj4r",{"micros":434,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":214,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-2-155",{"micros":15}]}].
+2025-06-13 02:41:51,149 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-13 03:24:09,226 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-13 03:24:09,815 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-13 03:24:10,023 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-7nl0",{"micros":479,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":240,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-13 03:26:51,230 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-13 06:52:46,002 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-13 06:52:46,555 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-13 06:52:46,794 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-1c54",{"micros":2868,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":1762,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"discord-sessions-prd-2-155",{"micros":19}]}].
+2025-06-13 06:56:51,568 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-13 08:55:40,838 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-13 08:55:41,375 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-13 08:55:41,577 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-3k22",{"micros":606,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":321,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-2-155",{"micros":17}]}].
+2025-06-13 08:56:51,764 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-13 09:15:16,400 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-13 09:15:16,949 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-13 09:15:17,188 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-t5mn",{"micros":42163,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":41909,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-2-155",{"micros":25}]}].
+2025-06-13 09:16:51,792 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-13 10:18:18,382 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-13 10:18:18,383 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-13 10:18:18,957 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-13 10:18:19,169 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-krlb",{"micros":478,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":259,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"discord-sessions-prd-2-155",{"micros":17}]}].
+2025-06-13 10:21:53,031 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-13 10:50:26,650 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-13 10:50:27,228 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-13 10:50:27,433 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-3q2f",{"micros":558,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":276,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-2-155",{"micros":21}]}].
+2025-06-13 10:51:53,077 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-13 14:27:19,103 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-13 14:27:19,647 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-13 14:27:19,855 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-p7wf",{"micros":473,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":243,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-2-155",{"micros":17}]}].
+2025-06-13 14:31:53,451 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-13 15:03:40,998 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-13 15:03:41,609 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-13 15:03:41,827 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-wvt3",{"micros":462,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":222,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"discord-sessions-prd-2-155",{"micros":19}]}].
+2025-06-13 15:06:53,508 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-13 16:25:12,636 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-13 16:25:13,233 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-13 16:25:13,443 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-td87",{"micros":479,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":234,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-13 16:26:53,650 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-13 18:06:15,565 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-13 18:06:16,153 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-13 18:06:16,355 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-9qnl",{"micros":4895,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":4650,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-13 18:06:53,852 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-13 19:00:04,509 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-13 19:00:05,066 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-13 19:00:05,312 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-cm31",{"micros":10119,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":7540,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":14}]}].
+2025-06-13 19:01:53,978 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-13 22:36:06,998 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-13 22:36:07,549 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-13 22:36:07,767 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-9xsq",{"micros":569,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":274,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-13 22:36:54,364 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-14 00:00:36,528 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-14 00:00:37,122 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-14 00:00:37,341 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-v8qb",{"micros":550,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":332,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":17}]}].
+2025-06-14 00:01:54,493 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-14 02:58:38,345 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-14 02:58:38,868 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-14 02:58:39,061 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-574w",{"micros":582,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":288,"calls":[]},"session_lookup_finished",{"micros":22,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-14 03:01:54,763 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-14 05:17:24,074 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-14 05:17:24,076 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-14 05:17:24,650 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-14 05:17:24,852 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-rz06",{"micros":572,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":289,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"discord-sessions-prd-2-155",{"micros":23}]}].
+2025-06-14 05:21:55,011 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-14 06:53:40,501 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-14 06:53:41,024 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-14 06:53:41,221 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-4d4b",{"micros":531,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":285,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-14 06:56:55,173 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-14 07:37:55,670 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-14 07:37:56,209 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-14 07:37:56,407 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-8wjn",{"micros":513,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":275,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-14 07:41:55,236 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-14 10:23:44,997 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-14 10:23:45,562 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-14 10:23:45,751 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-xh14",{"micros":570,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":296,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-2-155",{"micros":19}]}].
+2025-06-14 10:26:59,447 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-14 11:39:26,948 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-14 11:39:27,480 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-14 11:39:27,677 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-vj2p",{"micros":528,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":260,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-14 11:41:59,581 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-14 12:32:03,356 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-14 12:32:03,988 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-14 12:32:04,314 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-hlz9",{"micros":486,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":270,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"discord-sessions-prd-2-155",{"micros":11}]}].
+2025-06-14 12:36:59,663 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-14 13:33:12,074 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-14 13:33:12,650 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-14 13:33:12,863 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-vnqn",{"micros":517,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":277,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-14 13:36:59,772 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-14 14:45:26,776 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-14 14:45:27,357 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-14 14:45:27,560 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-vvqx",{"micros":446,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":222,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-2-155",{"micros":14}]}].
+2025-06-14 14:46:59,898 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-14 18:09:23,671 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-14 18:09:24,208 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-14 18:09:24,411 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-cl1d",{"micros":5740,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":1167,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-14 18:12:00,267 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-14 20:40:18,214 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-14 20:40:18,798 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-14 20:40:18,999 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-2htj",{"micros":568,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":287,"calls":[]},"session_lookup_finished",{"micros":24,"calls":[]},"discord-sessions-prd-2-155",{"micros":25}]}].
+2025-06-14 20:42:00,520 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-14 22:52:41,924 - __main__ - INFO - ステータスをビジーに変更
+2025-06-14 22:52:42,340 - __main__ - INFO - 質問受付 - User: inmoral_somnia, Q: 暇を紛らわせて
+2025-06-14 22:53:57,629 - __main__ - INFO - 応答完了 - Time: 74.80s, Success: True
+2025-06-14 22:53:57,630 - __main__ - INFO - ステータスをアイドルに変更: hf.co/mmnga/sarashina2.2-3b-instruct-v0.1-gguf:latest
+2025-06-14 22:59:55,222 - __main__ - INFO - ステータスをビジーに変更
+2025-06-14 22:59:55,626 - __main__ - INFO - 質問受付 - User: inmoral_somnia, Q: 祭りの屋台で売ってるソーダの正しい開け方教えて
+2025-06-14 22:59:55,635 - utils.conversation_manager - INFO - User: 418721500665741312 のコンテキストをDBから 1 往復分生成。
+2025-06-14 23:01:49,711 - __main__ - INFO - 応答完了 - Time: 113.51s, Success: True
+2025-06-14 23:01:49,712 - __main__ - INFO - ステータスをアイドルに変更: hf.co/mmnga/sarashina2.2-3b-instruct-v0.1-gguf:latest
+2025-06-14 23:03:59,494 - __main__ - INFO - ステータスをビジーに変更
+2025-06-14 23:03:59,987 - __main__ - INFO - 質問受付 - User: inmoral_somnia, Q: 片腕持ってかれながらなんとか開けられたわ〜
+
+面白いテクノロジーの話しして
+2025-06-14 23:03:59,993 - utils.conversation_manager - INFO - User: 418721500665741312 のコンテキストをDBから 2 往復分生成。
+2025-06-14 23:04:47,904 - __main__ - INFO - 応答完了 - Time: 47.41s, Success: True
+2025-06-14 23:04:47,906 - __main__ - INFO - ステータスをアイドルに変更: hf.co/mmnga/sarashina2.2-3b-instruct-v0.1-gguf:latest
+2025-06-14 23:05:45,902 - __main__ - INFO - ステータスをビジーに変更
+2025-06-14 23:05:46,338 - __main__ - INFO - 質問受付 - User: inmoral_somnia, Q: 飲料管理デバイスってどんなの？
+2025-06-14 23:05:46,345 - utils.conversation_manager - INFO - User: 418721500665741312 のコンテキストをDBから 3 往復分生成。
+2025-06-14 23:06:36,194 - __main__ - INFO - 応答完了 - Time: 49.31s, Success: True
+2025-06-14 23:06:36,196 - __main__ - INFO - ステータスをアイドルに変更: hf.co/mmnga/sarashina2.2-3b-instruct-v0.1-gguf:latest
+2025-06-14 23:17:00,806 - nextcord.http - INFO - Allowed 2 rate limits to be garbage collected.
+2025-06-14 23:41:36,179 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-14 23:41:36,181 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-14 23:41:36,797 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-14 23:41:37,016 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-tdq5",{"micros":3919,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":1923,"calls":[]},"session_lookup_finished",{"micros":18,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-14 23:42:00,853 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-15 00:14:43,669 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-15 00:14:44,292 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-15 00:14:44,512 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-jvj6",{"micros":538,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":293,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"discord-sessions-prd-2-155",{"micros":14}]}].
+2025-06-15 00:17:00,913 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-15 03:52:13,393 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-15 03:52:13,940 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-15 03:52:14,182 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-l5ql",{"micros":35395,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":13690,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":18}]}].
+2025-06-15 03:57:01,233 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-15 07:07:33,757 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-15 07:07:34,329 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-15 07:07:34,529 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-c513",{"micros":579,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":248,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"discord-sessions-prd-2-155",{"micros":21}]}].
+2025-06-15 07:12:01,569 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-15 07:56:37,301 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-15 07:56:37,908 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-15 07:56:38,115 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-lxb1",{"micros":493,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":243,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"discord-sessions-prd-2-155",{"micros":12}]}].
+2025-06-15 07:57:01,657 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-15 09:38:51,389 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-15 09:38:51,940 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-15 09:38:52,138 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-c57w",{"micros":490,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":242,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-2-155",{"micros":20}]}].
+2025-06-15 09:42:05,751 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-15 10:43:15,471 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-15 10:43:16,057 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-15 10:43:16,255 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-7bqh",{"micros":488,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":257,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-2-155",{"micros":17}]}].
+2025-06-15 10:47:05,836 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-15 13:13:13,029 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-15 13:13:13,589 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-15 13:13:13,806 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-9cfg",{"micros":3667,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":3367,"calls":[]},"session_lookup_finished",{"micros":24,"calls":[]},"discord-sessions-prd-2-155",{"micros":18}]}].
+2025-06-15 13:17:06,058 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-15 13:43:47,750 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-15 13:43:48,350 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-15 13:43:48,552 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-nkwm",{"micros":1222,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":689,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"discord-sessions-prd-2-155",{"micros":14}]}].
+2025-06-15 13:47:06,127 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-15 16:50:38,229 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-15 16:50:38,830 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-15 16:50:39,029 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-0nmn",{"micros":622,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":301,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"discord-sessions-prd-2-155",{"micros":18}]}].
+2025-06-15 16:52:06,403 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-15 20:35:33,534 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-15 20:35:34,146 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-15 20:35:34,351 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-16r0",{"micros":4726,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":2479,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-2-155",{"micros":19}]}].
+2025-06-15 20:37:06,789 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-15 22:42:28,739 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-15 22:42:29,405 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-15 22:42:29,609 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-x87d",{"micros":587,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":295,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-2-155",{"micros":17}]}].
+2025-06-15 22:47:06,970 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-16 00:44:35,145 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-16 00:44:35,720 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-16 00:44:35,913 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-mqzk",{"micros":561,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":283,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":20}]}].
+2025-06-16 00:47:07,150 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-16 04:10:37,159 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-16 04:10:37,777 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-16 04:10:37,968 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-kvh1",{"micros":603,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":284,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":17}]}].
+2025-06-16 04:12:07,461 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-16 04:34:44,246 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-16 04:34:44,803 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-16 04:34:45,030 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-w1nm",{"micros":571,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":315,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-2-155",{"micros":15}]}].
+2025-06-16 04:37:07,520 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-16 07:00:48,380 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-16 07:00:48,907 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-16 07:00:49,094 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-93ck",{"micros":554,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":280,"calls":[]},"session_lookup_finished",{"micros":18,"calls":[]},"discord-sessions-prd-2-155",{"micros":21}]}].
+2025-06-16 07:02:07,733 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-16 08:19:09,216 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-16 08:19:09,764 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-16 08:19:09,960 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-rbxq",{"micros":550,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":290,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"discord-sessions-prd-2-155",{"micros":17}]}].
+2025-06-16 08:22:07,860 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-16 10:04:31,133 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-16 10:04:31,702 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-16 10:04:31,901 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-2dz8",{"micros":2032,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":1583,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":19}]}].
+2025-06-16 10:07:12,076 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-16 12:23:24,209 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-16 12:23:24,812 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-16 12:23:25,017 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-v86t",{"micros":538,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":280,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-2-155",{"micros":20}]}].
+2025-06-16 12:27:12,297 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-16 15:03:36,585 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-16 15:03:37,178 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-16 15:03:37,377 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-d14b",{"micros":4928,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":4513,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-16 15:07:12,557 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-16 15:44:13,726 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-16 15:44:14,302 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-16 15:44:14,509 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-slt2",{"micros":484,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":255,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":15}]}].
+2025-06-16 15:47:12,613 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-16 17:12:59,697 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-16 17:13:00,254 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-16 17:13:00,506 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-wqsp",{"micros":41263,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":41016,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-16 17:17:12,763 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-16 17:36:08,350 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-16 17:36:08,888 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-16 17:36:09,098 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-4t41",{"micros":507,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":196,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"discord-sessions-prd-2-155",{"micros":18}]}].
+2025-06-16 17:37:12,782 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-16 18:52:58,800 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-16 18:52:58,801 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-16 18:52:59,409 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-16 18:52:59,636 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-rz06",{"micros":460,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":246,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-2-155",{"micros":14}]}].
+2025-06-16 18:57:12,917 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-16 19:22:18,568 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-16 19:22:19,141 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-16 19:22:19,380 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-7tkc",{"micros":3045,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":2576,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":18}]}].
+2025-06-16 19:27:12,966 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-16 19:34:01,983 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-16 19:34:01,984 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-16 19:34:02,545 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-16 19:34:02,745 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-khvk",{"micros":584,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":307,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":27}]}].
+2025-06-16 19:35:40,677 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-16 19:35:40,678 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-16 19:35:41,267 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-16 19:35:41,468 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-t4wd",{"micros":546,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":279,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-16 19:37:12,982 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-16 22:18:16,565 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-16 22:18:17,161 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-16 22:18:17,362 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-wqsp",{"micros":612,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":333,"calls":[]},"session_lookup_finished",{"micros":17,"calls":[]},"discord-sessions-prd-2-155",{"micros":15}]}].
+2025-06-16 22:22:13,246 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-17 00:45:28,937 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-17 00:45:29,471 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-17 00:45:29,668 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-gcz0",{"micros":5120,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":3965,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":17}]}].
+2025-06-17 00:47:13,502 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-17 01:54:29,848 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-17 01:54:30,424 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-17 01:54:30,634 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-4pfx",{"micros":636,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":298,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":19}]}].
+2025-06-17 01:57:13,639 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-17 02:18:13,834 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-17 02:18:13,836 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-17 02:18:14,427 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-17 02:18:14,629 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-k2p4",{"micros":497,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":282,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-2-155",{"micros":15}]}].
+2025-06-17 02:22:13,684 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-17 05:11:52,007 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-17 05:11:52,512 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-17 05:11:52,717 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-1mrf",{"micros":515,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":246,"calls":[]},"session_lookup_finished",{"micros":18,"calls":[]},"discord-sessions-prd-2-155",{"micros":19}]}].
+2025-06-17 05:12:13,946 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-17 05:49:39,907 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-17 05:49:40,440 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-17 05:49:40,639 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-16r0",{"micros":536,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":246,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"discord-sessions-prd-2-155",{"micros":18}]}].
+2025-06-17 05:52:13,998 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-17 07:58:56,012 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-17 07:58:56,575 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-17 07:58:56,775 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-wvt3",{"micros":2462,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":2034,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-17 08:02:14,196 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-17 09:02:58,344 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-17 09:02:58,897 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-17 09:02:59,101 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-0nmn",{"micros":589,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":304,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":15}]}].
+2025-06-17 09:07:14,283 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-17 11:38:03,255 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-17 11:38:03,814 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-17 11:38:04,023 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-8x1j",{"micros":526,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":266,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"discord-sessions-prd-2-155",{"micros":19}]}].
+2025-06-17 11:42:18,562 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-17 12:50:34,889 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-17 12:50:35,451 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-17 12:50:35,657 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-5321",{"micros":599,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":273,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":18}]}].
+2025-06-17 12:52:18,684 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-17 16:28:26,759 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-17 16:28:27,304 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-17 16:28:27,501 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-jvj6",{"micros":430,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":208,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"discord-sessions-prd-2-155",{"micros":17}]}].
+2025-06-17 16:32:19,085 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-17 18:21:27,384 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-17 18:21:27,962 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-17 18:21:28,168 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-qwfd",{"micros":535,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":265,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"discord-sessions-prd-2-155",{"micros":20}]}].
+2025-06-17 18:22:19,226 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-17 20:21:09,559 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-17 20:21:10,072 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-17 20:21:10,289 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-9xsq",{"micros":506,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":267,"calls":[]},"session_lookup_finished",{"micros":20,"calls":[]},"discord-sessions-prd-2-155",{"micros":14}]}].
+2025-06-17 20:22:19,422 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-17 21:35:18,388 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-17 21:35:19,035 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-17 21:35:19,239 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-bt98",{"micros":500,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":251,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-17 21:37:19,575 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-17 21:57:19,437 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-17 21:57:19,617 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-17 21:57:20,032 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-17 21:57:20,238 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-7vgh",{"micros":452,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":213,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-17 22:02:19,620 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-18 00:01:33,196 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-18 00:01:33,197 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-18 00:01:33,784 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-18 00:01:33,998 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-574w",{"micros":576,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":320,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":18}]}].
+2025-06-18 00:02:19,822 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-18 00:14:29,442 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-18 00:14:29,444 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-18 00:14:30,042 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-18 00:14:30,242 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-2htj",{"micros":533,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":267,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"discord-sessions-prd-2-155",{"micros":14}]}].
+2025-06-18 00:17:19,854 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-18 02:23:57,320 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-18 02:23:57,324 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-18 02:23:57,929 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-18 02:23:58,130 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-6p6h",{"micros":592,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":336,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-2-155",{"micros":18}]}].
+2025-06-18 02:27:20,116 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-18 03:27:26,804 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-18 03:27:26,806 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-18 03:27:27,356 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-18 03:27:27,557 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-p7wf",{"micros":866,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":553,"calls":[]},"session_lookup_finished",{"micros":29,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-18 03:32:20,247 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-18 04:53:59,554 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-18 04:54:00,145 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-18 04:54:00,348 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-v60r",{"micros":523,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":256,"calls":[]},"session_lookup_finished",{"micros":18,"calls":[]},"discord-sessions-prd-2-155",{"micros":14}]}].
+2025-06-18 04:57:20,388 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-18 05:10:30,327 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-18 05:10:30,328 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-18 05:10:30,901 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-18 05:10:31,103 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-11rc",{"micros":2509,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":714,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":15}]}].
+2025-06-18 05:12:20,408 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-18 05:13:52,316 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-18 05:13:52,317 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-18 05:13:52,834 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-18 05:13:53,046 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-tgnb",{"micros":4379,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":3314,"calls":[]},"session_lookup_finished",{"micros":18,"calls":[]},"discord-sessions-prd-2-155",{"micros":17}]}].
+2025-06-18 05:15:15,389 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-18 05:15:15,390 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-18 05:15:15,916 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-18 05:15:16,115 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-htb3",{"micros":744,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":315,"calls":[]},"session_lookup_finished",{"micros":20,"calls":[]},"discord-sessions-prd-2-155",{"micros":20}]}].
+2025-06-18 05:17:20,422 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-18 05:20:04,745 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-18 05:20:04,747 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-18 05:20:05,318 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-18 05:20:05,526 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-25lr",{"micros":616,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":326,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-2-155",{"micros":27}]}].
+2025-06-18 05:22:20,429 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-18 05:33:35,558 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-18 05:33:35,559 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-18 05:33:36,063 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-18 05:33:36,282 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-0nmn",{"micros":28962,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":28671,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"discord-sessions-prd-2-155",{"micros":17}]}].
+2025-06-18 05:37:20,445 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-18 05:43:50,870 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-18 05:43:50,872 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-18 05:43:51,462 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-18 05:43:51,668 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-sn1n",{"micros":669,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":349,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-2-155",{"micros":15}]}].
+2025-06-18 05:47:20,468 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-18 05:56:19,420 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-18 05:56:19,421 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-18 05:56:19,937 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-18 05:56:20,127 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-w2gm",{"micros":576,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":265,"calls":[]},"session_lookup_finished",{"micros":17,"calls":[]},"discord-sessions-prd-2-155",{"micros":20}]}].
+2025-06-18 05:57:20,496 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-18 08:31:22,195 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-18 08:31:22,196 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-18 08:31:22,778 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-18 08:31:22,978 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-tgnb",{"micros":5231,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":3751,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"discord-sessions-prd-2-155",{"micros":21}]}].
+2025-06-18 08:32:20,756 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-18 09:57:09,475 - nextcord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-06-18 09:57:09,475 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-18 09:57:10,046 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-18 09:57:10,251 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-b-mqzk",{"micros":491,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":265,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-2-155",{"micros":16}]}].
+2025-06-18 09:57:24,912 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-18 13:20:16,246 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-18 13:20:16,818 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-18 13:20:17,016 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-wldk",{"micros":623,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":278,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":15}]}].
+2025-06-18 13:22:25,259 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-18 15:09:48,859 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-18 15:09:49,446 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-18 15:09:49,647 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-d-rbxq",{"micros":521,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":257,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-155",{"micros":17}]}].
+2025-06-18 15:12:25,426 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-18 17:22:30,375 - nextcord.client - INFO - Got a request to RESUME the websocket.
+2025-06-18 17:22:30,979 - nextcord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-06-18 17:22:31,207 - nextcord.gateway - INFO - Shard ID None has successfully RESUMED session 62643b8a0c975270bac4c01779ccaccd under trace ["gateway-prd-us-east1-c-cl1d",{"micros":6768,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":3014,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-2-155",{"micros":15}]}].
+2025-06-18 17:27:25,668 - nextcord.http - INFO - Allowed 1 rate limits to be garbage collected.
+2025-06-18 18:00:59,886 - nextcord.client - INFO - Received keyboard interrupt, closing.
+2025-06-18 18:00:59,899 - nextcord.gateway - INFO - Websocket closed with 1000, cannot reconnect.
+2025-06-18 18:01:00,215 - nextcord.client - INFO - Cleaning up after 1 tasks.
+2025-06-18 18:01:00,218 - nextcord.client - INFO - All tasks finished cancelling.
+2025-06-18 18:01:00,219 - nextcord.client - INFO - Closing the event loop.
+2025-06-18 18:01:00,396 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000021DEACA6990>
