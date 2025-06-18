@@ -1,5 +1,7 @@
 @echo off
-rem --- Set Window Title ---
+rem --- このバッチファイルは、AI犬BotをWindows環境で起動します。---
+
+rem ウィンドウのタイトルを設定
 title AI-Dog Bot Launcher
 
 echo -------------------------------------
@@ -7,26 +9,28 @@ echo  AI-Dog Discord Bot Launcher
 echo -------------------------------------
 echo.
 
-rem --- Change directory to the script's location ---
+rem --- スクリプトのあるディレクトリへ移動 ---
+rem これにより、どこから実行してもパスの問題が起きなくなります。
 cd /d "%~dp0"
-echo [INFO] Changed directory to: %CD%
+echo [INFO] 作業ディレクトリ: %CD%
 echo.
 
-rem --- Attempt to activate virtual environment (venv) ---
-echo [INFO] Looking for virtual environment (venv)...
+rem --- 仮想環境(venv)の有効化を試みる ---
+echo [INFO] 仮想環境 (venv) を探しています...
 if exist "venv\Scripts\activate.bat" (
-    echo [OK] venv found. Activating...
+    echo [OK] 仮想環境を有効化します...
     call "venv\Scripts\activate.bat"
     echo.
 ) else (
-    echo [WARN] venv not found. Using global Python installation.
-    echo        If you face library errors, please run: pip install -r requirements.txt
+    echo [WARN] 仮想環境が見つかりませんでした。グローバルのPythonで実行します。
+    echo         ライブラリ関連のエラーが出る場合は、コマンドプロンプトで
+    echo         pip install -r requirements.txt を実行してください。
     echo.
 )
 
-rem --- Run the Python script ---
-echo [INFO] Starting AI-Dog Bot (bot_main.py)...
-echo        (To stop the bot, press Ctrl+C in this console)
+rem --- Pythonスクリプトを実行 ---
+echo [INFO] AI犬Bot (bot_main.py) を起動します...
+echo        (Botを停止するには、このウィンドウで Ctrl+C を押してください)
 echo -------------------------------------
 echo.
 
@@ -34,8 +38,8 @@ python bot_main.py
 
 echo.
 echo -------------------------------------
-echo [INFO] The bot process has ended.
+echo [INFO] ボットのプロセスが終了しました。
 echo.
-echo Please check the console window for any error messages.
-echo Press any key to close this window...
+echo コンソールウィンドウにエラーメッセージが表示されていないか確認してください。
+echo 何かキーを押すとこのウィンドウは閉じます...
 pause

@@ -1,8 +1,18 @@
-# Python .gitignore
+# ============================================================================
+# Pythonプロジェクト用 .gitignore
+# ----------------------------------------------------------------------------
+# このファイルは、Gitリポジトリに含めたくないファイルやフォルダを指定します。
+# これにより、リポジトリをクリーンに保ち、機密情報が漏洩するのを防ぎます。
+# ============================================================================
 
-# -----------------------------------------------------------------------------
-# コメント: このファイルは、Gitリポジトリに含めたくないファイルやフォルダを指定します。
-# -----------------------------------------------------------------------------
+
+# --- 仮想環境 ---
+# venv, env, .venv などの一般的な仮想環境フォルダ
+.env/
+.venv/
+env/
+venv/
+ENV/
 
 
 # --- Pythonキャッシュ・コンパイル済みファイル ---
@@ -12,20 +22,12 @@ __pycache__/
 *$py.class
 
 
-# --- 仮想環境 ---
-# venv, env, .venv などの一般的な仮想環境フォルダ
-venv/
-env/
-.venv/
-ENV/
-
-
-# --- 設定ファイル (機密情報) ---
-# .env や .env.local など、全ての.envファイルを無視する
-# ただし、テンプレートである .env.example は無視しない (「!」で否定)
+# --- 機密情報を含む設定ファイル ---
+# .env や .env.local など、全ての.envファイルを無視する。
+# ただし、テンプレートである .env.example は無視しない (「!」で否定する)。
 *.env
 .env.*
-!/.env.example
+!.env.example
 
 
 # --- データベースファイル ---
@@ -34,26 +36,28 @@ ENV/
 *.db
 *.sqlite
 *.sqlite3
-# このプロジェクト専用のDBファイル
+# このプロジェクト専用のDBファイルも明示的に指定
 ai_dog_conversation_history.sqlite3
 
 
 # --- ログファイル ---
 # 実行ログ
-*.log
 logs/
+*.log
 *.log.*
 
 
 # --- エディタ・IDE設定ファイル ---
-# Visual Studio Code, JetBrains IDEs (PyCharm)など
+# Visual Studio Code
 .vscode/
+# JetBrains IDEs (PyCharm, etc.)
 .idea/
+# Sublime Text
 *.sublime-project
 *.sublime-workspace
 
 
-# --- テスト関連ファイル ---
+# --- テスト関連 ---
 # pytestやcoverage.pyが生成するキャッシュやレポート
 .pytest_cache/
 .coverage
@@ -61,6 +65,11 @@ logs/
 htmlcov/
 nosetests.xml
 coverage.xml
+
+
+# --- 型チェックツール ---
+# mypyのキャッシュ
+.mypy_cache/
 
 
 # --- パッケージング・ビルド成果物 ---
@@ -78,11 +87,6 @@ dist/
 Thumbs.db
 ehthumbs.db
 desktop.ini
-
-
-# --- 型チェックツール ---
-# mypyのキャッシュ
-.mypy_cache/
 
 
 # --- Jupyter Notebook ---
