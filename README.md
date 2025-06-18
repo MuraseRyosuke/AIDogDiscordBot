@@ -47,8 +47,8 @@
 まず、このリポジトリをローカルマシンにクローンします。
 **注:** 以下のコマンドのURL部分は、ご自身で作成したGitHubリポジトリのURLに置き換えてください。
 ```bash
-git clone [https://github.com/your-username/ai-dog-discord-bot.git](https://github.com/your-username/ai-dog-discord-bot.git)
-cd ai-dog-discord-bot
+git clone [https://github.com/MuraseRyosuke/AIDogDiscordBot.git](https://github.com/MuraseRyosuke/AIDogDiscordBot.git)
+cd AIDogDiscordBot
 ```
 
 ### Step 2: Python仮想環境のセットアップ
