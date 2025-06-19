@@ -12,7 +12,7 @@ import logging
 import os
 import time
 from typing import Optional
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 # --- サードパーティライブラリのインポート ---
 import aiohttp
@@ -347,10 +347,18 @@ class AIDogBot(commands.Bot):
             return
 
         try:
-            # APIのベースURL（例: http://localhost:11434/api/generate -> http://localhost:11434/）を取得
-            ollama_base_url = urljoin(self.config.ollama_api_url, '.')
-            async with self.http_session.get(ollama_base_url, timeout=5) as response:
-                self.ollama_status = "オンライン" if response.status == 200 else f"エラー ({response.status})"
+            # configのAPI URLから、OllamaサーバーのルートURL（例: "http://host:port/"）を導出する
+            parsed_url = urlparse(self.config.ollama_api_url)
+            ollama_root_url = f"{parsed_url.scheme}://{parsed_url.netloc}/"
+            
+            # OllamaのルートURLにアクセスすると、稼働していればステータス200が返る
+            async with self.http_session.get(ollama_root_url, timeout=5) as response:
+                # 念のため、応答テキストに "Ollama is running" が含まれるかも確認すると、より確実性が増します
+                text_content = await response.text()
+                if response.status == 200 and "Ollama is running" in text_content:
+                    self.ollama_status = "オンライン"
+                else:
+                    self.ollama_status = f"エラー ({response.status})"
         except (aiohttp.ClientError, asyncio.TimeoutError):
             self.ollama_status = "オフライン"
 
